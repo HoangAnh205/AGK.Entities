@@ -20,7 +20,9 @@
             {
                 Name = "Nhật Khoa",
                 Category = new Category() { Name = "Khoa" },
-                Manufacturer = new Manufacturer() { Name = "khoasad" }
+                Manufacturer = new Manufacturer() { Name = "khoasad" },
+                Cost = 12000,
+                Instock = 1000
             };
             context.Products.Add(pro);
             context.SaveChanges();

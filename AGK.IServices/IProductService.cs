@@ -9,6 +9,8 @@ namespace AGK.IServices
 {
     public interface IProductService
     {
+
+        IEnumerable<ProductVm> FindAll();
         IEnumerable<ProductVm> FindByCategory(int category);
         IEnumerable<ProductVm> FindByManuFacturer(int manufactory);
         ProductVm FindById(Guid product);

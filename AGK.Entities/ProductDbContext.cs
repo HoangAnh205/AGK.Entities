@@ -10,13 +10,13 @@ namespace AGK.Entities
     public class ProductDbContext : DbContext
     {
         public ProductDbContext()
-            : base("StoreConnection")
+            : base("name=StoreConnection")
         {
 
         }
         public DbSet<Product> Products { set; get; }
-        public DbSet<Customer> Customers { set; get; }
-        public DbSet<Bill> Bills { set; get; }
-        public DbSet<BillDetail> BillDetails { set; get; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
+        public DbSet<Image> Images { get; set; }
     }
 }

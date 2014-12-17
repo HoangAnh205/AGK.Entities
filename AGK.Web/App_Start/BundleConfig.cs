@@ -19,27 +19,13 @@ namespace AGK.Web
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/js").Include(
-                      "~/Content/js/jquery-2.1.0.min.js",
-                      "~/Content/js/jquery-migrate-1.2.1.min.js",
-                      "~/Content/js/retina.js",
-                      "~/Content/js/camera.min.js",
-                      "~/Content/js/jquery.easing.1.3.js",
-                      "~/Content/js/waypoints.min.js",
-                      "~/Content/js/jquery.isotope.min.js",
-                      "~/Content/js/owl.carousel.min.js",
-                      "~/Content/js/jquery.tweet.min.js",
-                      "~/Content/js/jquery.custom-scrollbar.js",
-                      "~/Content/js/scripts.js"));
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/css").Include(
-                      "~/Content/css/bootstrap.min.css",
-                      "~/Content/css/camera.css",
-                      "~/Content/css/owl.carousel.css",
-                      "~/Content/css/owl.transitions.css",
-                      "~/Content/css/jquery.custom-scrollbar.css",
-                      "~/Content/css/style.css"));
-
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/site.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

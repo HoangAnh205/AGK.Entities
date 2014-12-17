@@ -1,0 +1,11 @@
+﻿@using AGK.Models
+@model IEnumerable<AGK.Models.ProductVm>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Danh sách sản phẩm</h2>
+@foreach (ProductVm item in Model)
+{
+    <p>Tên : @item.Image | Danh mục : @item.Category | Giá : @item.Cost</p>
+}

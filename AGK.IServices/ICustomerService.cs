@@ -13,7 +13,6 @@ namespace AGK.IServices
         bool Update(CustomerVm cus);
         CustomerVm FindById(Guid id);
         ICollection<CustomerVm> FindAll();
-
         
     }
 }
